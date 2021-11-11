@@ -3,11 +3,11 @@ package de.hfu;
 import java.util.Scanner;
 
 /**
- * Hello world!
+ * Standardklasse
  */
 public class App {
     /**
-     * Wandelt eingegebenen Text in Großbuchstaben um
+     * Wandelt eingegebenen Text in Grossbuchstaben um
      */
     public static void main(String[] args) {
         System.out.println("Geben etwas ein: ");
