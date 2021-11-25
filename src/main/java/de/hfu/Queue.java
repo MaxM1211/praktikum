@@ -1,7 +1,7 @@
 package de.hfu;
 
 public class Queue {
-    private int[] queue;
+    private final int[] queue;
     private int head;
     private int tail;
     private final int maxqueuelength;
