@@ -16,6 +16,9 @@ public class AppTest {
         assertTrue(true);
     }
 
+    /**
+     * Testet die Klasse Util auf richtige Funktionen
+     */
     @Test
     public void utilTest() {
         assertTrue(Util.istErstesHalbjahr(5));
@@ -37,6 +40,9 @@ public class AppTest {
 
     }
 
+    /**
+     * Testet die Klasse Queue auf richtige Funktionen
+     */
     @Test
     public void queueTest() {
         try {

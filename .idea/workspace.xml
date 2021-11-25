@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2898967-76cc-4451-9025-9d42b9f2eaf8" name="Changes" comment="Addede test cases">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/Util.java" afterDir="false" />
+    <list default="true" id="a2898967-76cc-4451-9025-9d42b9f2eaf8" name="Changes" comment="Verbesserung in Queue.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hfu/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hfu/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hfu/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hfu/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/hfu/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/hfu/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="90384915-dc53-4651-bdad-c02b7c97d792" />
+        <option name="url" value="https://github.com/MaxM1211/praktikum.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="20laL4UywWedkWXoAXn3FmgNddI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -118,6 +124,28 @@
       <option name="presentableId" value="Default" />
       <updated>1636621571720</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added queue and util class">
+      <created>1637832829153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637832829153</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added tests for queue and util class">
+      <created>1637832913968</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637832913968</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Verbesserung in Queue.java">
+      <created>1637833268279</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637833268279</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +174,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Addede test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addede test cases" />
+    <MESSAGE value="Added queue and util class" />
+    <MESSAGE value="Added tests for queue and util class" />
+    <MESSAGE value="Verbesserung in Queue.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verbesserung in Queue.java" />
   </component>
 </project>
