@@ -4,17 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2898967-76cc-4451-9025-9d42b9f2eaf8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a2898967-76cc-4451-9025-9d42b9f2eaf8" name="Changes" comment="Addede test cases">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hfu/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hfu/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/hfu/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/hfu/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,9 +36,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="14" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Maven.praktikum">
+  <component name="RunManager" selected="JUnit.AppTest.queueTest">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.hfu.App" />
       <module name="praktikum" />
@@ -40,6 +53,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.queueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="praktikum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.hfu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.hfu" />
+      <option name="MAIN_CLASS_NAME" value="de.hfu.AppTest" />
+      <option name="METHOD_NAME" value="queueTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,7 +101,13 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="Maven.praktikum" />
+      <item itemvalue="JUnit.AppTest.queueTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest.queueTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,10 +125,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Addede test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addede test cases" />
   </component>
 </project>
