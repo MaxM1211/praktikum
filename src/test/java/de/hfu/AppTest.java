@@ -2,6 +2,7 @@ package de.hfu;
 
 import de.hfu.residents.domain.Resident;
 import de.hfu.residents.repository.ResidentRepository;
+import de.hfu.residents.repository.ResidentRepositoryStub;
 import de.hfu.residents.service.BaseResidentService;
 import de.hfu.residents.service.ResidentServiceException;
 import org.junit.Test;
@@ -102,37 +103,28 @@ public class AppTest {
 
     @Test
     public void residentRepositoryStubTest() {
-        ResidentRepository stub = new ResidentRepository() {
-            @Override
-            public List<Resident> getResidents() {
+        ResidentRepositoryStub stub = new ResidentRepositoryStub();
+        stub.addResident(new Resident("Max", "Mustermann", "Musterstrasse 1", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
+        stub.addResident(new Resident("Marlene", "Maier", "Musterstrasse 2", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
+        stub.addResident(new Resident("Mario", "Meyer", "Meyerstrasse 3", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
+        stub.addResident(new Resident("Dieter", "Kinzel", "Musterstrasse 4", "Musterbaum", new Date(2000, Calendar.JANUARY, 13)));
 
-                List<Resident> residentList = new ArrayList<>();
-
-                residentList.add(new Resident("Max", "Mustermann", "Musterstrasse 1", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
-                residentList.add(new Resident("Marlene", "Maier", "Musterstrasse 2", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
-                residentList.add(new Resident("Mario", "Meyer", "Meyerstrasse 3", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
-                residentList.add(new Resident("Dieter", "Kinzel", "Musterstrasse 4", "Musterbaum", new Date(2000, Calendar.JANUARY, 13)));
-
-
-                return residentList;
-            }
-        };
 
         BaseResidentService residentService = new BaseResidentService();
         residentService.setResidentRepository(stub);
 
         Resident filterResident = new Resident("Ma*", "M*", null, null, null);
 
-        List l1 = residentService.getFilteredResidentsList(filterResident);
+        List<Resident> l1 = residentService.getFilteredResidentsList(filterResident);
 
         filterResident.setGivenName(null);
         filterResident.setFamilyName(null);
         filterResident.setStreet("Musterstrasse*");
 
-        List l2 = residentService.getFilteredResidentsList(filterResident);
+        List<Resident> l2 = residentService.getFilteredResidentsList(filterResident);
 
         filterResident.setStreet("M*");
-        List l3 = residentService.getFilteredResidentsList(filterResident);
+        List<Resident> l3 = residentService.getFilteredResidentsList(filterResident);
 
         assertEquals(3, l1.size());
 
@@ -165,7 +157,7 @@ public class AppTest {
         }
 
         filterResident.setStreet("K*");
-        List l4 = residentService.getFilteredResidentsList(filterResident);
+        List<Resident> l4 = residentService.getFilteredResidentsList(filterResident);
 
         assertEquals(0, l4.size());
 
@@ -188,7 +180,21 @@ public class AppTest {
     @Test
     public void residentRepositoryMockTest() {
 
+        List<Resident> residentList = new ArrayList<>();
+        residentList.add(new Resident("Max", "Mustermann", "Musterstrasse 1", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
+        residentList.add(new Resident("Marlene", "Maier", "Musterstrasse 2", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
+        residentList.add(new Resident("Mario", "Meyer", "Meyerstrasse 3", "Musterbaum", new Date(2000, Calendar.JANUARY, 12)));
+        residentList.add(new Resident("Dieter", "Kinzel", "Musterstrasse 4", "Musterbaum", new Date(2000, Calendar.JANUARY, 13)));
+
         ResidentRepository mock = createMock(ResidentRepository.class);
+        expect(mock.getResidents()).andReturn(residentList);
+        expect(mock.getResidents()).andReturn(residentList);
+        expect(mock.getResidents()).andReturn(residentList);
+        expect(mock.getResidents()).andReturn(residentList);
+        expect(mock.getResidents()).andReturn(residentList);
+        expect(mock.getResidents()).andReturn(residentList);
+
+        replay(mock);
 
         BaseResidentService residentService = new BaseResidentService();
         residentService.setResidentRepository(mock);
@@ -206,17 +212,17 @@ public class AppTest {
         filterResident.setStreet("M*");
         List l3 = residentService.getFilteredResidentsList(filterResident);
 
-        assertEquals(3, l1.size());
+        assertThat(l1.size(), equalTo(3));
 
-        assertEquals(3, l2.size());
+        assertThat(l2.size(), equalTo(3));
 
-        assertEquals(4, l3.size());
+        assertThat(l3.size(), equalTo(4));
 
 
         try {
             residentService.getUniqueResident(filterResident);
-            assert (false);
-        } catch (ResidentServiceException e) {
+            fail();
+        } catch (ResidentServiceException ignored) {
         }
 
         filterResident.setGivenName("Dieter");
@@ -232,8 +238,8 @@ public class AppTest {
         filterResident.setStreet("*");
         try {
             residentService.getUniqueResident(filterResident);
-            assert (false);
-        } catch (ResidentServiceException e) {
+            fail();
+        } catch (ResidentServiceException ignored) {
         }
 
         filterResident.setStreet("K*");

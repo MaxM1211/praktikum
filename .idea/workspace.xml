@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2898967-76cc-4451-9025-9d42b9f2eaf8" name="Changes" comment="Added java doc comments">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/residents/domain/Resident.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/residents/repository/ResidentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/residents/service/BaseResidentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/residents/service/ResidentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/residents/service/ResidentServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoftwareEngineering/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+    <list default="true" id="a2898967-76cc-4451-9025-9d42b9f2eaf8" name="Changes" comment="Added intergration tests&#10;Stub Test working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hfu/residents/repository/ResidentRepositoryStub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/hfu/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/hfu/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +52,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -206,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637834170703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added intergration tests&#10;Stub Test working">
+      <created>1638444043965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638444043965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +217,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -235,12 +232,14 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/SoftwareEngineering" />
+      <path value="$PROJECT_DIR$/../SoftwareEngineering" />
     </ignored-roots>
     <MESSAGE value="Addede test cases" />
     <MESSAGE value="Added queue and util class" />
     <MESSAGE value="Added tests for queue and util class" />
     <MESSAGE value="Verbesserung in Queue.java" />
     <MESSAGE value="Added java doc comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added java doc comments" />
+    <MESSAGE value="Added intergration tests&#10;Stub Test working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added intergration tests&#10;Stub Test working" />
   </component>
 </project>
